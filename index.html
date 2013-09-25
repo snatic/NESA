@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Captura Orden de Compra</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/snatic.css" />
+  <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" /> 
+  <script src="jquery-1.10.2.min.js"></script> 
+  <script src="jquery.mobile-1.3.2.min.js"></script> 
+</head>
+<body>
+<!-- Pagina 1-->
+	<div data-role="page">
+		<div data-role="header" data-theme="b">
+    		<a href="#" data-icon="delete">Cancelar</a>
+    		<h1>Crear Orden Venta</h1>
+    		<a href="#" data-icon="check">Guardar</a>
+		</div>
+		<div data-role="content" data-theme="b">
+			<form action="">
+				<label for="">Tipo de Documento:</label>
+				<select name="doc_type" id="doc_type">
+					<option value=""></option>
+					<option value="TA">Orden Estandar</option>
+				</select>
+			Organizacion Ventas:<input type="text" name="SALES_ORG">
+			Canal de Distribucion:<input type="text" name="DISTR_CHAN">
+			Division:<input type="text" name="DIVISION">
+			<div style="text-align:center;">
+			<a href="#pagina2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Siguiente</a>
+			</div>
+			</form>
+
+		</div>
+		<div data-role="footer" data-theme="b"><h3><img src="images/National_Expertise.png"></h3></div>
+	</div>
+<!-- Pagina 2-->
+		<div data-role="page" id="pagina2" >
+		<div data-role="header" data-theme="b">
+    		<a href="#" data-icon="delete">Cancelar</a>
+    		<h1>Crear Orden Venta</h1>
+    		<a href="#" data-icon="check">Guardar</a>
+		</div>
+		<div data-role="content" data-theme="b">
+			<form action="">
+			<label for="">Solicitante:</label><input type="text" name="SOL">
+			<label for="">Destinatario Mcia:</label><input type="text" name="DEST">
+			<div style="text-align:center;">
+			<a href="#pagina2" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-rel="back">Anterior</a>
+		</div>
+			</form>
+		</div>
+		<div data-role="footer" data-theme="b"><h3><img src="images/National_Expertise.png"></h3</div>
+	</div>
+</body>
+</html>
